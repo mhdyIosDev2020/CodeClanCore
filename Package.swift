@@ -16,14 +16,15 @@ let package = Package(
             name: "CodeClanCore",
             targets: ["CodeClanCore"]),
     ], dependencies: [
-        .package(url: "https://github.com/evgenyneu/keychain-swift.git", from: "20.0.0")
+//        .package(url: "https://github.com/evgenyneu/keychain-swift.git", from: "20.0.0")
+        .package(name: "KeychainSwift", url: "https://github.com/evgenyneu/keychain-swift.git", from: "20.0.0")
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
             name: "CodeClanCore",
-            dependencies: ["keychain-swift"]),
+            dependencies: ["KeychainSwift"]),
         .testTarget(
             name: "CodeClanCoreTests",
             dependencies: ["CodeClanCore"]),

@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import keychain-swift
+import KeychainSwift
 public struct Helper {
     
     static public func logout() {
