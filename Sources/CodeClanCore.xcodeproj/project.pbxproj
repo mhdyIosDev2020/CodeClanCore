@@ -18,6 +18,7 @@
 		ECEFB6CE2A88FFE900A914A0 /* Tokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEFB6CD2A88FFE900A914A0 /* Tokens.swift */; };
 		ECEFB6E52A89323500A914A0 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEFB6E42A89323500A914A0 /* Log.swift */; };
 		ECEFDE0B2A97A49E00EE038C /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEFDE0A2A97A49E00EE038C /* Login.swift */; };
+		ECF7F28B2B5120CE007BF8B5 /* HapticFeedBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7F28A2B5120CE007BF8B5 /* HapticFeedBack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		ECEFB6CD2A88FFE900A914A0 /* Tokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokens.swift; sourceTree = "<group>"; };
 		ECEFB6E42A89323500A914A0 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		ECEFDE0A2A97A49E00EE038C /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		ECF7F28A2B5120CE007BF8B5 /* HapticFeedBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedBack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				ECE41C8D2A83CA150092F0FE /* CodeClanCore.swift */,
 				ECEFB6C92A88FF8100A914A0 /* KeychainManager.swift */,
 				ECEFB6CB2A88FF9000A914A0 /* UserDefaultManager.swift */,
+				ECF7F28A2B5120CE007BF8B5 /* HapticFeedBack.swift */,
 			);
 			path = CodeClanCore;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				ECEFB6CA2A88FF8100A914A0 /* KeychainManager.swift in Sources */,
 				ECEFB6E52A89323500A914A0 /* Log.swift in Sources */,
 				ECEFB6CC2A88FF9000A914A0 /* UserDefaultManager.swift in Sources */,
+				ECF7F28B2B5120CE007BF8B5 /* HapticFeedBack.swift in Sources */,
 				ECEFB6CE2A88FFE900A914A0 /* Tokens.swift in Sources */,
 				ECE41C8E2A83CA150092F0FE /* CodeClanCore.swift in Sources */,
 			);
