@@ -7,37 +7,31 @@
 
 import Foundation
 public extension ServerModels.Response{
+
     struct LoginResponse: Codable {
-        
-        public var created: String?
-        public var expiresIn: Int?
-        public var idToken: String?
-        public var refreshToken: String?
-        public var user: UserModel?
-        
-        enum CodingKeys: String,CodingKeys {
-        case created,expiresIn,refreshToken,user
-        case idToken = "jwtToken"
+        let user: User
+        let idToken, refreshToken: String
+        enum CodingKeys: String,CodingKey {
+            case refreshToken
+            case user
+            case idToken = "jwtToken"
         }
     }
 
+    // MARK: - User
+    struct User: Codable {
+        let id, email, fullName, displayName: String?
+        let phoneNumber, name, surname, userName: String?
+        let role: String?
+        let devices: String?
+        let creationDate: String?
+        let isVerified: Bool?
 
-    struct UserModel: Codable{
-        public var id: String?
-        public var displayName: String?
-        public var email: String?
-        public var fullName: String?
-        public var phoneNumber: String?
-        public var emailVerified: Bool?
-        public var federatedId: String?
-        public var name: String?
-        public var surname: String?
-        public var role: String?
-        public var localId: String?
-        public var photoUrl: String?
-        public var creationDate: String?
-        public var isVerified: Bool?
-        public var Devices: Any?
+        enum CodingKeys: String, CodingKey {
+            case id, email, fullName, displayName, phoneNumber, name, surname, userName, role
+            case devices = "Devices"
+            case creationDate, isVerified
+        }
     }
 }
 
