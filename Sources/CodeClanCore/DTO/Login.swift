@@ -9,8 +9,8 @@ import Foundation
 public extension ServerModels.Response{
 
     struct LoginResponse: Codable {
-        let user: User
-        let idToken, refreshToken: String
+        public let user: User
+        public let idToken, refreshToken: String
         enum CodingKeys: String,CodingKey {
             case refreshToken
             case user
@@ -20,12 +20,12 @@ public extension ServerModels.Response{
 
     // MARK: - User
     struct User: Codable {
-        let id, email, fullName, displayName: String?
-        let phoneNumber, name, surname, userName: String?
-        let role: String?
-        let devices: String?
-        let creationDate: String?
-        let isVerified: Bool?
+        public let id, email, fullName, displayName: String?
+        public let phoneNumber, name, surname, userName: String?
+        public let role: String?
+        public let devices: String?
+        public let creationDate: String?
+        public let isVerified: Bool?
 
         enum CodingKeys: String, CodingKey {
             case id, email, fullName, displayName, phoneNumber, name, surname, userName, role
