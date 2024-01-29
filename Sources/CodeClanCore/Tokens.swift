@@ -41,11 +41,11 @@ public struct Tokens {
         }
     }
     
-    static public var userProfile: ServerModels.Response.UserModel? {
+    static public var userProfile: ServerModels.Response.User? {
         get{
             if let storedData = Helper.readDataKeychain(key: "userProfileData") {
                 let decoder = JSONDecoder()
-                if let userProfile = try? decoder.decode(ServerModels.Response.UserModel.self, from: storedData) {
+                if let userProfile = try? decoder.decode(ServerModels.Response.User.self, from: storedData) {
                     return userProfile
                 }else{
                     return nil
