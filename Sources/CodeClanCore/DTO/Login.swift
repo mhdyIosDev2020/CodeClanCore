@@ -10,7 +10,7 @@ public extension ServerModels.Response{
 
     struct LoginResponse: Codable {
         public let user: User
-        public let idToken, refreshToken: String
+        public let idToken, refreshToken: String? 
         enum CodingKeys: String,CodingKey {
             case refreshToken
             case user
